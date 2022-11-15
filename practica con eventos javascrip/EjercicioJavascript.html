@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="funciones.js"></script>
+</head>
+<body>
+   <!-- ejercicio 1--> 
+    <form>
+
+            <fieldset>
+                <legend>convertir</legend>
+
+                    <label for="GradosCelsius">Grados Celsius:</label>
+                    <input type="text" value="" id="Gradosc" name="GC">
+                    <br>
+               
+            <input type="button" value="Convertir:" name="obtC" onclick="convertirGradosCentigradosAGradosFahrenheint(
+                parseFloat(document.getElementById('Gradosc').value))">
+            </fieldset>  
+     </form>
+            <h5>El resultado es:</h5>
+            <br>
+            <span id="resultado"></span>
+            <br>
+           <!-- ejercicio 2--> 
+ <form>
+    <br>
+    <fieldset>
+    <legend>Calculadora de Porcentaje</legend>
+   
+                   <label for="CalcularPorcentaje">numero:</label>
+                   <input type="text" value="" id="Num" name="Num">
+                   <br>
+               
+               <input type="button" value="Confirme su resultado:" name="obtP" onclick="calcularporcentajes(
+                   parseFloat(document.getElementById('Num').value))">
+    </fieldset>
+                   </form>
+                   <br>
+                   <h5>El porcentaje es:</h5>
+                   <br>
+                   <span id="porcentaje"></span> 
+                   <br>
+                  
+                <!-- ejercicio 3-->     
+<form>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Generar tabla</legend>
+
+        <label for="IngreseFilas">Ingrese numero de Filas:</label>
+        <input type="text" value="" id="filas" name="filas">
+        <br/>
+        <label for="IngreseColumnas">Ingrese numero de Columnas:</label>
+        <input type="text" value="" id="colum" name="colum">
+        <br/>
+    
+    <input type="button" value="Crear tabla:" name="obtC" onclick="generarTablaHTML(
+                parseFloat(document.getElementById('filas').value))">
+    </fieldset>
+    <br>
+    <h5>El tabla es:</h5>
+    <br>
+    <span id="tabla"></span>
+</form>           
+</body>
+</html>
